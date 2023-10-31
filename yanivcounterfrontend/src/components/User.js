@@ -9,7 +9,6 @@ export default function User() {
 	const [email, setEmail] = React.useState('');
 	const [score, setScore] = React.useState('');
 	const [users, setUsers] = React.useState([]);
-
 	const [toAddStates, setToAddStates] = React.useState({});
 
 	const handleClick = (e) => {
@@ -69,8 +68,11 @@ export default function User() {
 		<Container>
 			<Paper elevation={3} style={paperStyle}>
 				<h1 style={{ color: 'black' }}>
-					<b>Add player</b>
+					<b>Yaniv score counter</b><br/><br/>
 				</h1>
+				<h2 style={{ color: 'black' }}>
+					<b>Add player</b>
+				</h2>
 				<Box
 					component="form"
 					sx={{
